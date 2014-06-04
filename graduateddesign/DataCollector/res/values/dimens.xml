@@ -1,0 +1,224 @@
+<resources>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="textSize_small">12sp</dimen>
+    <dimen name="textSize_medium1">16sp</dimen>
+    <dimen name="textSize_medium2">18sp</dimen>
+    <dimen name="textSize_medium3">20sp</dimen>
+    <dimen name="textSize_large">24sp</dimen>
+    <dimen name="textSize_title">30px</dimen>
+    <dimen name="textSize_title_xhdpi">42px</dimen>
+    <dimen name="marginTop">5dp</dimen>
+    <dimen name="marginLeft">10dp</dimen>
+    <dimen name="marginRight">10dp</dimen>
+    <dimen name="marginBottom">5dp</dimen>
+    <dimen name="paddingTop">5dp</dimen>
+    <dimen name="paddingLeft1">5dp</dimen>
+    <dimen name="paddingBottom">5dp</dimen>
+    <dimen name="freeentry_marginLeft">5dp</dimen>
+    <dimen name="freeentry_marginRight">5dp</dimen>
+    <dimen name="freeentry_itemwidth">80dp</dimen>
+    <dimen name="paddingLeft2">10dp</dimen>
+    <dimen name="textWidth_large">180dp</dimen>
+    <dimen name="textWidth_medium">120dp</dimen>
+    <dimen name="textWidth_small">60dp</dimen>
+    <dimen name="divideHeight_small">3dp</dimen>
+    <dimen name="divideHeight_large">5dp</dimen>
+    <dimen name="searchSize_Edit">220dp</dimen>
+    
+    <dimen name="textSize_large38">38px</dimen>
+    <dimen name="textSize_large36">36px</dimen>
+    <dimen name="textSize_large34">34px</dimen>
+    <dimen name="textSize_large30">30px</dimen>
+    <dimen name="textSize_medium26">26px</dimen>
+    <dimen name="textSize_medium27">27px</dimen>
+    <dimen name="textSize_medium24">24px</dimen>
+    <dimen name="textSize_small23">23px</dimen>
+    <dimen name="textSize_small20">20px</dimen>
+    <dimen name="textSize_small18">18px</dimen>
+    <dimen name="textSize_small17">17px</dimen>
+    <dimen name="textSize_small15">15px</dimen>
+    <dimen name="margin12">12px</dimen>
+    <dimen name="margin4">4px</dimen>
+    <dimen name="margin6">6px</dimen>
+	<dimen name="margin8">8px</dimen>
+	<dimen name="margin10">10px</dimen>
+	<dimen name="margin15">15px</dimen>
+	<dimen name="margin18">18px</dimen>
+	<dimen name="margin20">20px</dimen>
+	<dimen name="margin23">23px</dimen>
+	<dimen name="margin24">24px</dimen>
+	<dimen name="margin27">27px</dimen>
+	<dimen name="margin30">30px</dimen>
+	<dimen name="margin36">36px</dimen>
+	<dimen name="margin48">48px</dimen>
+	
+	
+	<dimen name="title_height_hdpi">66px</dimen>
+	<dimen name="title_height_xhdpi">100px</dimen>
+	<dimen name="title_height_xxhdpi">100px</dimen>
+	<dimen name="bottom_height_hdpi">74px</dimen>
+	<dimen name="bottom_height_xhdpi">110px</dimen>
+	
+	<dimen name="maxwidth260">260px</dimen>
+    <dimen name="maxwidth390">390px</dimen>
+    <dimen name="maxwidth585">585px</dimen>
+    <dimen name="minwidth234">234px</dimen>
+    <dimen name="minwidth351">351px</dimen>
+	
+	<dimen name="attchmentsize">20dp</dimen>
+
+    
+	<dimen name="layoutHeight72">72px</dimen>
+	<dimen name="layoutHeight108">108px</dimen>
+    <dimen name="layoutHeight288">288px</dimen>
+    <dimen name="layoutHeight432">432px</dimen> 
+    
+    <dimen name="bottomHeight74">74px</dimen>
+    <dimen name="bottomHeight110">110px</dimen>
+    <dimen name="buttonWidth200">200px</dimen>
+    <dimen name="buttonWidth300">300px</dimen>
+    
+    <dimen name="titleHeight66">66px</dimen>
+    <dimen name="titleHeight100">100px</dimen>
+    <dimen name="itemHeight54">54px</dimen>
+    <dimen name="itemHeight81">81px</dimen>
+    <dimen name="itemHeight68">68px</dimen>
+    <dimen name="itemHeight102">102px</dimen>
+    <dimen name="checkHeight44">44px</dimen>
+    <dimen name="checkHeight66">66px</dimen>
+    <dimen name="buttonHeight27">27px</dimen>
+    <dimen name="buttonHeight40">40px</dimen>
+    <dimen name="buttonHeight45">45px</dimen>
+    <dimen name="buttonHeight68">68px</dimen>
+    <dimen name="buttonWidth75">75px</dimen>
+    <dimen name="buttonWidth113">113px</dimen>
+    <dimen name="buttonWidth77">77px</dimen>
+    <dimen name="buttonWidth116">116px</dimen>
+    <dimen name="buttonWidth72">72px</dimen>
+    <dimen name="buttonWidth109">109px</dimen>
+    
+    <dimen name="bottomTextsize15">15px</dimen>
+    <dimen name="bottomTextsize23">23px</dimen>
+    
+    <dimen name="titleTextsize27">27px</dimen>
+    <dimen name="titleTextsize40">40px</dimen>
+    <dimen name="titleButtontextsize18">18px</dimen>
+    <dimen name="titleButtontextsize27">27px</dimen>
+    <dimen name="textsize21">21px</dimen>
+    <dimen name="textsize32">32px</dimen>
+    <dimen name="textsize23">23px</dimen>
+    <dimen name="textsize34">34px</dimen>
+    
+    <dimen name="textsize26">26px</dimen>
+    <dimen name="textsize38">38px</dimen>
+    
+    <dimen name="textwidth9">9px</dimen>
+    <dimen name="textwidth13">13px</dimen>
+    <dimen name="textwidth66">66px</dimen>
+    <dimen name="textwidth100">100px</dimen>
+    <dimen name="textwidth87">87px</dimen>
+    <dimen name="textwidth130">130px</dimen>
+    
+   
+    <dimen name="textwidth270">270px</dimen>
+    
+    <dimen name="textwidth432">432px</dimen>
+    <dimen name="textwidth648">648px</dimen>
+    
+    <dimen name="textwidth105">105px</dimen>
+    
+    <dimen name="textwidth110">110px</dimen>
+    <dimen name="textwidth165">165px</dimen>
+    
+    <dimen name="textwidth120">120px</dimen>
+  
+    
+    <dimen name="textwidth267">267px</dimen>
+    <dimen name="textwidth400">400px</dimen>
+    
+    <dimen name="textwidth276">276px</dimen>
+    <dimen name="textwidth414">414px</dimen>
+    
+    <dimen name="textwidth280">280px</dimen>
+    <dimen name="textwidth420">420px</dimen>
+    
+    <dimen name="textwidth320">320px</dimen>
+    <dimen name="textwidth480">480px</dimen>
+    
+    <dimen name="textwidth327">327px</dimen>
+    <dimen name="textwidth490">490px</dimen>
+    
+    <dimen name="textwidth340">340px</dimen>
+    <dimen name="textwidth510">510px</dimen>
+    
+    <dimen name="textwidth399">399px</dimen>
+    <dimen name="textwidth600">600px</dimen>
+    
+    <dimen name="textHeight2">2px</dimen>
+    <dimen name="textHeight3">3px</dimen>
+    
+    <dimen name="margin9">9px</dimen>
+    
+    
+    <dimen name="margin35">35px</dimen>
+    <dimen name="margin52">52px</dimen>
+    <dimen name="margin42">42px</dimen>
+    <dimen name="margin65">65px</dimen>
+    
+    <dimen name="margin72">72px</dimen>
+    
+    <dimen name="margin60">60px</dimen>
+    <dimen name="margin90">90px</dimen>
+    <dimen name="margin68">68px</dimen>
+    <dimen name="margin102">102px</dimen>
+    <dimen name="margin80">80px</dimen>
+    <dimen name="margin120">120px</dimen>
+    
+    <dimen name="margin129">129px</dimen>
+    <dimen name="margin193">193px</dimen>
+    <dimen name="marginbutton6">6px</dimen>
+    <dimen name="marginbutton9">9px</dimen>
+    <dimen name="marginbottom15">15px</dimen>
+    <dimen name="marginbottom23">23px</dimen>
+    <dimen name="margintop6">6px</dimen>
+    <dimen name="margintop9">9px</dimen>
+    <dimen name="margintop12">12px</dimen>
+    <dimen name="margintop13">13px</dimen>
+    <dimen name="margintop15">15px</dimen>
+    <dimen name="margintop23">23px</dimen>
+    <dimen name="margintop18">18px</dimen>
+    <dimen name="margintop27">27px</dimen>
+    
+    <dimen name="margintop24">24px</dimen>
+    <dimen name="margintop36">36px</dimen>
+    
+    <dimen name="margintop28">28px</dimen>
+    <dimen name="margintop43">43px</dimen>
+    
+    <dimen name="margintop30">30px</dimen>
+    <dimen name="margintop45">45px</dimen>
+    
+    <dimen name="margintop47">47px</dimen>
+    <dimen name="margintop70">70px</dimen>
+    
+    
+    <dimen name="paddingbottom7">7px</dimen>
+    <dimen name="paddingbottom10">10px</dimen>
+    
+    <!-- 渠道拜访-自由表单 -->
+    <!-- by dp 
+    <dimen name="cf_field_padding">8dp</dimen>
+    <dimen name="cf_field_height">33dp</dimen>
+    <dimen name="cf_field_text_size">17sp</dimen>
+    <dimen name="cf_field_prompt_size">90dp</dimen>
+    -->
+	<!-- by px     -->
+	
+	<dimen name="cf_field_padding">18px</dimen>
+    <dimen name="cf_field_height">74px</dimen>
+    <dimen name="cf_field_text_size">14dp</dimen>
+    <dimen name="cf_field_prompt_size">90dp</dimen>
+</resources>

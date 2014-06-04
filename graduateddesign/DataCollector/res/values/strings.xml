@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 各个模块名称 -->
+    <string name="channelmodule">渠道</string>
+    <string name="schedulemodule">日程</string>
+    <string name="querymodule">查询</string>
+    <string name="settingmodule">设置</string>
+    <string name="messagemodule">消息</string>
+    <string name="mainboardmodule">首页</string>
+    <string name="app_name">渠道拜访</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="messageList">消息列表</string>
+    <string name="messageContent">消息内容</string>
+    <string name="messageDetail">消息详情</string>
+    <string name="noData">没有数据</string>
+    <string name="nomoreData">没有更多数据</string>
+    <string name="dataLoading">数据加载中...</string>
+    <string name="senderName">发件人</string>
+    <string name="senderDate">发送时间</string>
+    <string name="msgType">消息类型</string>
+    <string name="totalRowCount">总行数</string>
+    <string name="MsgAttachmentPC">请到PC端查看</string>
+    <string name="topcf">明细行超过50行，请到PC端查看。</string>
+    <string name="typetopc">不支持的格式,请到PC端查看</string>
+    <string name="atttopc">附件内容超过2M，请到PC端查看</string>
+    <string name="atttopc_before">附件内容超过</string>
+    <string name="atttopc_last">KB，请到PC端查看</string>
+    <string name="nosdtopc">没有安装sd卡，暂时无法查看附件</string>
+    <string name="sdlesstopc">sd卡剩余空间不足，暂时无法查看附件</string>
+    <string name="attmoretopc">附件行超过50行，请到PC端查看。</string>
+    <string name="attuploadmoretopc">更多附件上传请使用电脑</string>
+    <string name="att_error_zero">附件大小为0,无法打开</string>
+    <string name="fileSizeTo2M">大于2M附件请使用电脑上传</string>
+    <string name="att_load_error">解析附件错误</string>
+    <string name="network_error">网络错误</string>
+    <string name="all">全部</string>
+    <string name="monday">周一</string>
+    <string name="tuesday">周二</string>
+    <string name="wednesday">周三</string>
+    <string name="thursday">周四</string>
+    <string name="friday">周五</string>
+    <string name="saturday">周六</string>
+    <string name="sunday">周日</string>
+    <string name="janurary">一月</string>
+    <string name="february">二月</string>
+    <string name="march">三月</string>
+    <string name="april">四月</string>
+    <string name="may">五月</string>
+    <string name="june">六月</string>
+    <string name="july">七月</string>
+    <string name="august">八月</string>
+    <string name="september">九月</string>
+    <string name="october">十月</string>
+    <string name="november">十一月</string>
+    <string name="december">十二月</string>
+    <string name="MINEMAIL">微邮</string>
+    <string name="NOTIFY">通知</string>
+    <string name="ALELT">预警</string>
+    <string name="SENDED">已发送</string>
+    <string name="confirm">确认</string>
+
+    <!-- 消息模块相关 -->
+    <string name="msg_receiver">收件人:</string>
+    <string name="msg_add_attachment">添加附件</string>
+    <string name="msg_send_type">发送方式</string>
+    <string name="msg_send_hint">请选择发送方式</string>
+    <string name="msg_receiver_hint">请选择收件人</string>
+    <string name="msg_send">发送</string>
+    <string name="msg_newmail">新微邮</string>
+    <string name="msg_person_list_title">人员搜索</string>
+    <string name="msg_messageindex_title">消息中心</string>
+    <string name="msg_detail_receiver">收件人</string>
+    <string name="msg_detail_object">主题</string>
+    <string name="msg_today">今天</string>
+    <string name="msg_sendtype_msg">通知/微邮</string>
+    <string name="msg_sendtype_email">邮件</string>
+    <string name="msg_sendtype_cssms">手机短信</string>
+    <string name="msg_sendtype_im">IM消息</string>
+    <string name="msg_sendtype_push">PUSH通知</string>
+    <string name="msg_forward">转发</string>
+    <string name="msg_empty_receiver">收件人为空</string>
+    <string name="msg_empty_content">邮件内容为空</string>
+    <string name="msg_send_fail">发送失败,手机内存存储空间不足,可能是因为附件过大</string>
+    <string name="msg_confirm_cancel">确认取消</string>
+    <string name="msg_confirm_notcancel">不取消</string>
+    <string name="msg_reply">回复</string>
+    <string name="msg_reply_all">全部回复</string>
+    <string name="msg_alert_content">邮件未发送，是否取消编辑？</string>
+
+    <!-- 日程拜访、考勤使用资源 -->
+    <string-array name="eventDetailForm">
+        <item>新增表单</item>
+        <item>查看列表</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="eventDetailOrder">
+        <item>新增下单</item>
+        <item>查看列表</item>
+        <item>取消</item>
+    </string-array>
+    <string name="submittijiao">提交</string>
+    <string name="noDataReturn">没有返回</string>
+    <string name="dataReadError">数据解析错误</string>
+    <string name="noDataordataReadError">服务器无数据或数据解析错误</string>
+    <string name="dataError">数据异常</string>
+    <string name="noGPSInfo">没有定位信息，请稍后尝试</string>
+    <string name="noNetWork">网络不可用</string>
+    <string name="neverTip">永不提示</string>
+    <string name="openGPSServer">为了更精准有效的定位，请打开GPS位置服务</string>
+    <string name="youHavePhoto2Upload">您还有未上传的照片</string>
+    <string name="storePhotoFailed">存储照片失败！</string>
+    <string name="isGiveUpEdit">是否放弃编辑?</string>
+    <string name="requestSuccess">请求成功</string>
+    <string name="inputTheme"> 请输入主题</string>
+    <string name="noSDCard">内存卡不存在</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="tip">提示</string>
+    <string name="wu">无</string>
+    <string name="transAddError">转换地址出错！</string>
+    <string name="today">今天</string>
+    <string name="totalNum">共：</string>
+    <string name="undoneNum">未完成：</string>
+    <string name="newDayEvent">新建拜访日程</string>
+    <string name="channelNode">渠道节点</string>
+    <string name="channelRoute">渠道路线</string>
+    <string name="theme">主题</string>
+    <string name="start">开始</string>
+    <string name="end">结束</string>
+    <string name="demo">备注</string>
+    <string name="selectChannelNode">选择渠道节点</string>
+    <string name="selectChannelRoute">选择渠道路线</string>
+    <string name="byChannelRoute">按渠道路线</string>
+    <string name="byChannelNode">按渠道节点</string>
+    <string name="eventDetail">日程详情</string>
+    <string name="attendance">考勤</string>
+    <string name="signIn">签到</string>
+    <string name="signOut">签退</string>
+    <string name="takePhoto">拍照</string>
+    <string name="takeRecord">录音</string>
+    <string name="workProject">工作项目</string>
+    <string name="isEntry">已录</string>
+    <string name="notEntry">未录</string>
+    <string name="editDayEvent">编辑拜访日程</string>
+    <string name="tipCanDeleteEvent">是否删除当前拜访日程？</string>
+    <string name="tipCantDeleteEvent">已完成的拜访日程，不可删除。</string>
+    <string name="selectDateTime">请选择时间</string>
+    <string name="tipCantNewEventDiffDay">不能建立跨天日程</string>
+    <string name="tipCantNewEventbefToday">新建日程不能早于今天</string>
+    <string name="tipEndBeforBegin">结束时间不能早于开始时间</string>
+    <string name="tipThemeCantNull">主题不能为空</string>
+    <string name="tipChannelNodeCantNull">节点不能为空</string>
+    <string name="upload">上传</string>
+    <string name="visit">拜访：</string>
+    <string name="sure">确定</string>
+    <string name="pageNoData">当前页面无数据</string>
+
+    <!-- 我的渠道使用资源 -->
+    <string name="mychannel">我的渠道</string>
+    <string name="channeldetail">渠道详情</string>
+    <string name="searchroute">按渠道路线</string>
+    <string name="searchnode">按渠道节点</string>
+    <string name="location">地理位置</string>
+    <string name="nolocationMsg">无地理位置信息</string>
+    <string name="havelocatioinMsg">查看地图</string>
+    <string name="uploadsucceed">当前位置已上传</string>
+    <string name="uploadfailed">无法取到当前位置</string>
+    <string name="callphone">拨打电话</string>
+    <!-- 销量统计 -->
+    <string name="salesranking_title">销量统计</string>
+    <string name="salesranking_week">周</string>
+    <string name="salesranking_month">月</string>
+    <string name="salesranking_region">区间</string>
+    <string name="salesranking_num">数量</string>
+    <string name="salesranking_monney">金额</string>
+    <string name="salesranking_query">查询</string>
+    <string name="search">搜索</string>
+
+    <!-- 自由表单 -->
+    <string name="cf_func_add">增加</string>
+    <string name="file_upload">文件上传</string>
+    <string name="rePhoto">重拍</string>
+    <string name="recording">录音</string>
+    <string name="reRecording">重新录音</string>
+    <string name="record_ing">录音进行中</string>
+    <string name="record_pause">录音暂停</string>
+    <string name="record_stop">录音停止</string>
+    <string name="is_exit">放弃本次录音吗？</string>
+    <string name="is_reRecord">确定放弃当前录音，重新录音？</string>
+    <string name="max_recordtime">录音时长已达最大值90秒</string>
+    <string name="more_data">For more.Please use computer to check.</string>
+    <string name="thisweek">this week</string>
+    <string name="thismonth">this month</string>
+    <string name="startdate">start date</string>
+    <string name="enddate">end date</string>
+    <string name="selectdate">select date</string>
+    <string name="change">修改</string>
+    <string name="crm_query">查询</string>
+
+    <string-array name="weathers">
+        <item>龙卷风</item>
+        <item>热带风暴</item>
+        <item>暴风</item>
+        <item>大雷雨</item>
+        <item>雷阵雨</item>
+        <item>雨夹雪</item>
+        <item>雨夹雹</item>
+        <item>雪夹雹</item>
+        <item>冻雾雨</item>
+        <item>细雨</item>
+        <item>冻雨</item>
+        <item>阵雨</item>
+        <item>阵雨</item>
+        <item>阵雪</item>
+        <item>小阵雪</item>
+        <item>高吹雪</item>
+        <item>雪</item>
+        <item>冰雹</item>
+        <item>雨淞</item>
+        <item>粉尘</item>
+        <item>雾</item>
+        <item>薄雾</item>
+        <item>烟雾</item>
+        <item>大风</item>
+        <item>风</item>
+        <item>冷</item>
+        <item>阴</item>
+        <item>多云</item>
+        <item>多云</item>
+        <item>局部多云</item>
+        <item>局部多云</item>
+        <item>晴</item>
+        <item>晴</item>
+        <item>转晴</item>
+        <item>转晴</item>
+        <item>雨夹冰雹</item>
+        <item>热</item>
+        <item>局部雷雨</item>
+        <item>偶有雷雨</item>
+        <item>偶有雷雨</item>
+        <item>偶有阵雨</item>
+        <item>大雪</item>
+        <item>零星阵雪</item>
+        <item>大雪</item>
+        <item>局部多云</item>
+        <item>雷阵雨</item>
+        <item>阵雪</item>
+        <item>局部雷阵雨</item>
+        <item>not available</item>
+    </string-array>
+
+    <!-- 查询模块 -->
+    <string name="visitReview">拜访回顾</string>
+    <string name="reachedRateAnalysis">达成率分析</string>
+    <string name="salesQuery">结存查询</string>
+    <string name="salesRanking">销量统计</string>
+    <string name="dailySales">日销量</string>
+    <string name="dealersCompletion">经销商完成率</string>
+    <string name="customManager">客户经理完成率</string>
+    <string name="dealersCreditblances">经销商信用余额</string>
+    <string name="attendanceHistoryDetail">考勤回顾</string>
+    <string name="photo">照片</string>
+    <string name="attachmentList">附件列表</string>
+    <string name="cfList">报送列表</string>
+    <string name="cfDetail">报送明细</string>
+    <string name="visit_reachedRateAnalysis">拜访达成率分析</string>
+    <string name="total_reachedRate">总达成率：</string>
+    <string name="reachedRate">达成率：</string>
+    <string name="visit_indicator">拜访指标</string>
+    <string name="visit_actual">实际拜访</string>
+    <string name="visit_plan">计划拜访</string>
+    <string name="channelnode_name">渠道节点名称</string>
+    <string name="person_name">人员名称</string>
+    <string name="date">日期</string>
+    <string name="query_btn">查询</string>
+    <string name="moretoPC">更多请到PC端查看</string>
+    <string name="morematerialtoPC">更多物料到PC端查看</string>
+    <string name="delete">删除</string>
+    <string name="current_month">本月</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="morechannelnodetoPC">渠道节点超过100条,更多数据请到电脑端查看</string>
+    <string name="monney">金额：</string>
+    <string name="code">编码：</string>
+    <string name="balance">结存：</string>
+    <string name="visit_attendance">拜访考勤</string>
+    <string name="recorded">已录</string>
+    <string name="until">至</string>
+    <string name="current_week">本周</string>
+    <string name="moredatatoPC">更多数据请到电脑查看</string>
+    <string name="currentnoNetWork">当前网络不可用</string>
+    <string name="searchText">搜索关键字</string>
+     <string name="agentorder_subbnstype">交易子类型</string>
+    <string name="agentorder_no_bnstype">没有取得交易类型</string>
+    
+</resources>
