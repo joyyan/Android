@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/messagechilddetail_backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:background="@drawable/nav_ic_bk_norm" />
+
+        <TextView
+            android:id="@+id/childtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="消息详情"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+            android:id="@+id/title_lace"
+            android:layout_width="fill_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/titile_lace" />
+
+    <ScrollView
+        android:id="@+id/messagechilddetail_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f0f0"
+        android:paddingBottom="@dimen/commonPadding"
+        android:paddingTop="@dimen/commonPadding" >
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:padding="@dimen/cf_field_padding" >
+
+    <TextView
+        android:id="@+id/cfViewName"
+        android:layout_width="@dimen/cf_field_prompt_size"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:textColor="@color/list_text_black"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/cfViewName"
+        android:paddingLeft="@dimen/cf_field_padding" >
+
+        <TextView
+            android:id="@+id/mark"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="%"
+            android:textColor="@color/list_text_blue"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/cfViewTextEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/mark"
+            android:background="@null"
+            android:gravity="right"
+            android:inputType="numberDecimal|numberSigned"
+            android:singleLine="true"
+            android:textColor="@color/list_text_blue"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

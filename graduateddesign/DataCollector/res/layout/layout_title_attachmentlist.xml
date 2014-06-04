@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="#ffffff">
+	<!-- 标题左侧的btn -->
+  <Button
+            android:id="@+id/tasktitlepanel_leftBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:background="@drawable/nav_ic_bk_norm"
+            />
+       
+ 	
+
+    <!-- 标题名称 -->
+    <TextView 
+        android:id="@+id/tasktitlepanel_titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:layout_toRightOf="@+id/tasktitlepanel_leftBtn"
+        android:layout_toLeftOf="@+id/tasktitlepanel_rightBtn"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/attachmentList"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+    
+    <Button
+      android:id="@+id/tasktitlepanel_rightBtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/tasktitlepanel_leftBtn"
+      android:layout_alignBottom="@+id/tasktitlepanel_leftBtn"
+      android:layout_alignParentRight="true"
+      android:paddingRight="8dp"
+      android:background="@drawable/nav_ic_new_norm"
+      android:gravity="center_vertical"
+      android:visibility="invisible" />  
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp" >
+
+    <RelativeLayout
+        android:id="@+id/fileUpload_recordInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/fileUpload_recordPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_play" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/fileUpload_recordPlay" >
+
+            <TextView
+                android:id="@+id/fileUpload_recordSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="13KB"
+                android:textColor="@color/buleword"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fileUpload_recordName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/fileUpload_recordSize"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="2013-11-16-22-52-25-5868.m4a"
+                android:textColor="@color/buleword"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fileUpload_recordPlayInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/fileUpload_recordName"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="fdsds"
+                android:textColor="@color/buleword"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fileUpload_recordTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/fileUpload_recordSize"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="录制于2013.11.16 21:50"
+                android:textColor="@color/buleword"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/fileUpload_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fileUpload_recordPlay"
+            android:layout_marginTop="4dp" />
+    </RelativeLayout>
+
+</LinearLayout>

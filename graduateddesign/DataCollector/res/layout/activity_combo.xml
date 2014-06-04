@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_back"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/nav_bkgrd" >
+
+        <Button
+            android:id="@+id/comboback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/nav_ic_bk_norm"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="1dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/nav_btn_selector"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/combotitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/title_text_black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/listtitle_lace"
+        android:layout_width="fill_parent"
+        android:layout_height="6dp"
+        android:background="@drawable/titile_lace" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="10dp" >
+    </ScrollView>
+
+</LinearLayout>

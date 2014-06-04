@@ -2,6 +2,24 @@ package bupt.ygj.datacollector.factory;
 
 import android.content.Context;
 import android.util.Log;
+import bupt.ygj.datacollector.data.ElementDataVO;
+import bupt.ygj.datacollector.data.TemplateVO;
+import bupt.ygj.datacollector.elementview.AbsCommonFormView;
+import bupt.ygj.datacollector.elementview.CFAddressView;
+import bupt.ygj.datacollector.elementview.CFDatePickerView;
+import bupt.ygj.datacollector.elementview.CFEditBooleanView;
+import bupt.ygj.datacollector.elementview.CFEditDoubleView;
+import bupt.ygj.datacollector.elementview.CFEditIntegerView;
+import bupt.ygj.datacollector.elementview.CFEditMoneyView;
+import bupt.ygj.datacollector.elementview.CFEditPercentView;
+import bupt.ygj.datacollector.elementview.CFEditPhoneView;
+import bupt.ygj.datacollector.elementview.CFEditSimpleView;
+import bupt.ygj.datacollector.elementview.CFEnumView;
+import bupt.ygj.datacollector.elementview.CFFileView;
+import bupt.ygj.datacollector.elementview.CFInitNullTypeView;
+import bupt.ygj.datacollector.elementview.CFPhotoView;
+import bupt.ygj.datacollector.elementview.CFReferView;
+import bupt.ygj.datacollector.elementview.CFTextAreaView;
 
 public class ElementViewFactory {
 	private static int id = 1;

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp" 
+    android:padding="@dimen/cf_field_padding">
+
+    <LinearLayout
+        android:id="@+id/cfViewNamelayout"
+        android:layout_width="@dimen/cf_field_prompt_size"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/requiredfields"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cell_ic_requiredfields"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/cfViewName"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/cf_field_text_size" />
+    </LinearLayout>
+
+
+	<EditText
+	    android:id="@+id/cfViewTextEdit"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/cfViewNamelayout"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:singleLine="true"
+	     android:textColor="#688fdf"
+	      android:gravity="right"
+	    android:textSize="@dimen/cf_field_text_size" 
+	    android:paddingLeft="@dimen/cf_field_padding"
+	    android:background="@null"
+	    />
+
+</RelativeLayout>

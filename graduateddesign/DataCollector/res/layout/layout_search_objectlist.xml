@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:padding="0dp"
+        android:background="@drawable/search_bg" >
+
+        <ImageView
+            android:id="@+id/staffsearch_mirror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/searchmirror" />
+
+        <ImageView
+            android:id="@+id/staffsearch_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/search_delete"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/staffsearch_editText"
+            style="@style/editTextCrm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/staffsearch_delete"
+            android:layout_toRightOf="@+id/staffsearch_mirror"
+            android:imeOptions="actionSearch"
+            android:background="@null"
+            android:gravity="left"
+            android:padding="0dp"
+            android:singleLine="true"
+            android:hint="搜索" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- tittle 两边都有button -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/nav_bkgrd"
+        android:gravity="center_vertical" >
+
+        <!-- 标题左侧的btn -->
+
+        <Button
+            android:id="@+id/titlePanel_leftBtn2"
+            android:layout_width="48dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/nav_ic_bk_norm"
+            android:gravity="center"
+            android:textColor="@color/nav_btn_selector"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/titlePanel__rightBtn2"
+            android:layout_width="48dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="@color/nav_btn_selector"
+            android:textSize="16sp" />
+
+        <!-- 标题名称 -->
+
+        <TextView
+            android:id="@+id/titlePanel__titleTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/eventDetail"
+            android:textColor="@color/list_text_black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_titile_lace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/titile_lace" />
+
+</LinearLayout>

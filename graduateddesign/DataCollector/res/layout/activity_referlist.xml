@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6" >
+
+    <include
+        android:id="@+id/layoutTitle_staff"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_title_referlist" />
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <RelativeLayout
+        android:id="@+id/staffsearch_editLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/layoutTitle_staff"
+        android:background="#ffffff" >
+
+        <include
+            android:id="@+id/layoutSearch_panel"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/statechangeBtn"
+            layout="@layout/layout_search_objectlist"
+             />
+
+       
+<!-- 
+        <LinearLayout
+            android:id="@+id/statechangeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/switch_state_b"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+                        <TextView
+                android:id="@+id/searchText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="查询"
+                android:textSize="12sp" />
+        </LinearLayout>
+         -->
+    </RelativeLayout>
+
+       
+    <!-- 搜索人员列表ListView -->
+
+    <ImageView
+        android:id="@+id/title_lace"
+        android:layout_width="fill_parent"
+        android:layout_height="6dp"
+        android:layout_below="@id/staffsearch_editLayout"
+        android:background="@drawable/titile_lace" />
+
+    <RelativeLayout
+        android:id="@+id/stafflist_dataPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_lace"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/search_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <wa.android.libs.listview.WALoadListView
+            android:id="@+id/Staff_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- 无数据页面 -->
+
+        <LinearLayout
+            android:id="@+id/stafflist_nodataPanel"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="#f0f0f0"
+            android:gravity="center"
+            android:visibility="gone"
+          >
+            <!--      android:background="@drawable/empty_view" -->
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:textColor="#8f8f8f"
+                android:textSize="12sp"
+    			android:text="@string/nodataonpanel"
+                android:gravity="center" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

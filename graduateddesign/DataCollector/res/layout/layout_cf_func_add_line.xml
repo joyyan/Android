@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp" 
+    android:padding="@dimen/cf_field_padding"
+    >
+
+    <ImageView
+        android:id="@+id/img_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/addicon" />
+
+    <TextView
+        android:id="@+id/text_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/img_add"
+        android:background="@drawable/common_row_single_bg"
+        android:padding="@dimen/cf_field_padding"
+        android:text="@string/cf_func_add"
+        android:textColor="#2E5892"
+        android:textSize="@dimen/cf_field_text_size" />
+	
+</RelativeLayout>

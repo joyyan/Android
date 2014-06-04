@@ -30,5 +30,134 @@
     <color name="gray">#b5b5b5</color>
     <!-- 灰色 -->
     <color name="buttongreen">#1e7de4</color>
+    <!-- 背景颜色 -->
+    <color name="index_bkgrd">#fbfbfb</color>
+    <color name="common_back">#f0f0f0</color>
+    <color name="nav_bkgrd">#ffffff</color>
+    <color name="list_item_bkgrd">#fdfdfd</color>
+    <color name="bg_toolbar">#f5f5f5</color>
+    <color name="bg_blue">#688fdf</color>
+ <!-- 公共颜色开始 -->
+    <!-- 图表颜色 -->
+    <color name="graph_yellow">#ffc000</color>
+    <color name="graph_green">#91cf00</color>
+    <color name="graph_blue">#688fdf</color>
+    <!-- 文字颜色 -->
+    <color name="title_text_black">#1f1f1f</color>
+    <color name="nav_btn_black">#686868</color>
+    <color name="nav_btn_selected_black">#1f1f1f</color>
+    <color name="list_text_black">#1f1f1f</color>
+    <color name="list_text_gray">#686868</color>
+    <color name="list_text_gray_new">#8f8f8f</color>
+    <color name="list_text_blue">#688fdf</color>
+    <!-- edittext的提示颜色 -->
+    <color name="text_gray_unedit">#b0b0b0</color>
+    <!-- textview阅读时不可点击的灰色 -->
+    <color name="text_gray_unclick">#b5b5b5</color>
+    <!-- 工具栏分割线颜色 -->
+    <color name="toolbar_separator">#a0a0a0</color>
+    <!-- 背景颜色 -->
+    <color name="index_bkgrd">#fbfbfb</color>
+    <color name="common_back">#f0f0f0</color>
+    <color name="nav_bkgrd">#ffffff</color>
+    <color name="list_item_bkgrd">#fdfdfd</color>
+    <color name="bg_toolbar">#f5f5f5</color>
+    <color name="bg_blue">#688fdf</color>
+    <!-- 列表颜色 -->
+    <color name="list_item_bkgrd">#fdfdfd</color>
+    <color name="list_item_selected_bkgrd">#f0f0f0</color>
+    <color name="list_separator">#dfdfdf</color>
+    <color name="list_border">#d0d0d0</color>
+    <!-- btn背景颜色 -->
+    <color name="btn_bkgrd_blue">#65a5ff</color>
+    <color name="btn_bkgrd_blue_selected">#3f8fe1</color>
+    <color name="btn_bkgrd_red">#ff5001</color>
+    <color name="btn_bkgrd_red_selected">#df3f00</color>
+    <!-- 公共颜色结束 -->
+   <color name="button_red_nor">#ff5001</color>
+    <color name="button_red_press">#df3f00</color>
+    <color name="white">#ffffff</color>
+    <!-- 白色 -->
+    <color name="black">#000000</color>
+    <!-- 黑色 -->
+    <color name="blue">#0000FF</color>
+    <!-- 蓝色 -->
+    <color name="darkgray">#777777</color>
+    <!-- 暗灰色 -->
+    <color name="clicgreen">#04BFBF</color>
+    <color name="darkcyan">#006699</color>
+    <!-- 暗青色 -->
+    <color name="lightcyan">#0099cc</color>
+    <!-- 浅青色 -->
+    <color name="darkblue">#003366</color>
+    <!-- 深蓝色 -->
+    <color name="lightblue">#99ccff</color>
+    <!-- 浅蓝色 -->
+    <color name="lightbrown">#ffcc99</color>
+    <!-- 浅棕色 -->
+    <color name="darkbrown">#cc9966</color>
+    <!-- 深棕色 -->
+    <color name="magenta">#cc3399</color>
+    <!-- 洋红色 -->
+    <color name="lightgray">#D3D3D3</color>
+    <!-- 浅灰色 -->
+    <color name="gray">#b5b5b5</color>
+    <!-- 灰色 -->
+    <color name="buttongreen">#1e7de4</color>
+    <!-- 按钮文字浅蓝 -->
+    <color name="textblue">#165c92</color>
+    <color name="transparent">#9000</color>
+    <color name="common_bg">#E6E6E6</color>
+    <color name="alpha7balck">#b2000000</color>
+    <color name="red">#f00</color>
+    <color name="row_start_color">#CCFF99</color>
+    <color name="row_end_color">#CCFF99</color>
+    <color name="orderlist_group_tag">#555555</color>
+    <color name="graytext">#b0b0b0</color>
+    <color name="graytext2">#8f8f8f</color>
+    <!-- 页面背景 -->
+    <color name="buleword">#688fdf</color>
+    <!-- 页面背景 -->
 
-</resources>
+    <color name="recordtimeword">#63b7e7</color>
+    <!-- 页面背景 -->
+    <!-- 日历 -->
+    
+    <color name="calendar_background">#000000</color>
+    <color name="recordremind_background">#FFFFFF</color>
+    <color name="border_color">#FFFFFF</color>
+    <color name="weekname_color">#FFFFFF</color>
+    <color name="day_color">#FFFFFF</color>
+    <color name="text_day_color">#5f5f5f</color>
+    <color name="inner_grid_color">#FFFFFF</color>
+    <color name="prev_next_month_day_color">#999999</color>
+    <color name="text_color">#FFFF00</color>
+    <color name="recordremindtext_color">#000000</color>
+    <color name="current_day_color">#FF0000</color>
+    <color name="today_background_color">#FF0000</color>
+    <color name="today_color">#FFFFFF</color>
+    <color name="sunday_saturday_color">#FF0000</color>
+    <color name="sunday_saturday_prev_next_month_day_color">#990000</color>
+    <color name="transparent">#50000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="bgcolor">#ffffff</color>
+    <color name="txtcolor">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="Calendar_WeekBgColor">#EFE7DE</color>
+    <color name="Calendar_WeekFontColor">#8C8A8C</color>
+    <color name="Calendar_DayBgColor">#F7F7F7</color>
+    <color name="isHoliday_BgColor">#E0E0E0</color>
+    <color name="unPresentMonth_FontColor">#8C8A8C</color>
+    <color name="isPresentMonth_FontColor">#000000</color>
+    <color name="isToday_BgColor">#EBDCC1</color>
+    <color name="specialReminder">#FF0000</color>
+    <color name="commonReminder">#BDBAB5</color>
+    <color name="gray">#808080</color>
+    <color name="groupname">#688fdf</color>
+    <color name="ziti">#2e5892</color>
+    <color name="pressedziti">#FFFFFF</color>
+    <color name="pressemainboarditem">#fbfbfb</color>
+    <color name="unpressemainboarditem">#e3e3e3</color>
+      <color name="pressgreenbtn">#80b800</color>
+    <color name="unpressgreenbtn">#91cf00</color></resources>

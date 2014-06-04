@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_back" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/common_back"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+       		android:background="@color/nav_bkgrd">
+
+            <Button
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+         		android:background="@drawable/nav_ic_bk_norm"
+            />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="56dp"
+                android:layout_toRightOf="@+id/backBtn"
+                android:gravity="center"
+                android:textSize="@dimen/commonTitleFontSize" />
+
+        </RelativeLayout>
+          <ImageView
+        android:id="@+id/listtitle_lace"
+        android:layout_width="fill_parent"
+        android:layout_height="6dp"
+        android:background="@drawable/titile_lace" />
+        <wa.android.libs.listview.WALoadListView
+            android:id="@+id/refervalueslist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/stafflist_nodataPanel"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="#f0f0f0"
+            android:gravity="center"
+            android:visibility="gone"
+          >
+            <!--      android:background="@drawable/empty_view" -->
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:textColor="#8f8f8f"
+                android:textSize="12sp"
+    			android:text="@string/nodataonpanel"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

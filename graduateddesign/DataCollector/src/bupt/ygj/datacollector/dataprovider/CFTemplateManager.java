@@ -4,6 +4,8 @@ import wa.android.common.activity.BaseActivity;
 import wa.android.common.utils.PreferencesUtil;
 import wa.android.constants.CommonWAPreferences;
 import android.os.Handler;
+import bupt.ygj.datacollector.constants.StaticString;
+import bupt.ygj.datacollector.datarequester.TemplateVORequester2;
 
 public class CFTemplateManager {
 	

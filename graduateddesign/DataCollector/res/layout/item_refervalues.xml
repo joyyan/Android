@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_row_mid_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/toprelativelayoiut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin27"
+        android:layout_marginLeft="@dimen/margin23"
+        android:layout_marginRight="@dimen/margin23"
+        android:layout_marginTop="@dimen/margin27" >
+
+        <TextView
+            android:id="@+id/refervaluename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:paddingRight="15dp"
+            android:layout_marginRight="15dp"
+            android:singleLine="true"
+            android:textColor="@drawable/visitlistitemcolor_selector"
+            android:textSize="@dimen/textSize_large38" />
+
+        <ImageView
+            android:id="@+id/refervalueimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="15dp"
+            android:src="@drawable/listline_selected"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/toprelativelayoiut"
+        android:background="#B4B4B4" />
+
+</RelativeLayout>

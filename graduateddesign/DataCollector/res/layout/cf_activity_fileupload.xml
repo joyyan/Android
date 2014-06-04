@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_back"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/fileUpload_titlePanel"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        layout="@layout/layout_title_schedule" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutTitle_lace"
+        android:layout_marginTop="-6dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/fileUpload_listPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fileUpload_newRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:id="@+id/fileUpload_addRecordIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:src="@null" />
+
+                <TextView
+                    android:id="@+id/fileUpload_recordTip"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/mailcontent"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="@string/recording"
+                    android:textColor="@color/list_text_black"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/fileUpload_recordInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mailcontent"
+                    android:orientation="vertical"
+                    android:padding="8dp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/fileUpload_recordPlay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_play" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@id/fileUpload_recordPlay" >
+
+                            <TextView
+                                android:id="@+id/fileUpload_recordSize"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:gravity="right"
+                                android:singleLine="true"
+                                android:text="13KB"
+                                android:textColor="@color/list_text_blue"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/fileUpload_recordName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_toLeftOf="@id/fileUpload_recordSize"
+                                android:gravity="left"
+                                android:singleLine="true"
+                                android:text="2013-11-16-22-52-25-5868.m4a"
+                                android:textColor="@color/list_text_black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/fileUpload_recordPlayInfo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@id/fileUpload_recordName"
+                                android:gravity="left"
+                                android:singleLine="true"
+                                android:text="fdsds"
+                                android:textColor="@color/list_text_black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/fileUpload_recordTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/fileUpload_recordSize"
+                                android:gravity="right"
+                                android:singleLine="true"
+                                android:text="录制于2013.11.16 21:50"
+                                android:textColor="@color/list_text_blue"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <SeekBar
+                        android:id="@+id/fileUpload_seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/fileUpload_recordPlay"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/layoutTitle_lace"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fileUpload_titlePanel"
+        android:background="@drawable/titile_lace" />
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+<item android:drawable="@drawable/wadetail_row_array" android:state_pressed="false"></item>    
+<item android:drawable="@drawable/detail_row_arrowpressed" android:state_pressed="true"></item>
+
+</selector>

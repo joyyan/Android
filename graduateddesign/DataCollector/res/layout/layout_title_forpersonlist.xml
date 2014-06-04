@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/nav_bkgrd">
+	<!-- 标题左侧的btn -->
+    <Button 
+        android:id="@+id/tasktitlepanel_leftBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:background="@drawable/nav_ic_bk_norm" />     
+    <!-- 标题名称 -->
+    <TextView 
+        android:id="@+id/tasktitlepanel_titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/msg_person_list_title"
+        android:textSize="16sp"
+        android:textColor="@color/title_text_black" />
+</RelativeLayout>

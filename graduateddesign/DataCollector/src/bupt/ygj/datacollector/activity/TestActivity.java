@@ -13,13 +13,20 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import bupt.ygj.datacollector.R;
+import bupt.ygj.datacollector.constants.StaticString;
+import bupt.ygj.datacollector.dataprovider.CFTemplateManager;
+import bupt.ygj.datacollector.test.WorkItemVO;
 
 public class TestActivity extends BaseActivity {
 
 	private Button button;
 	/** 界面提示 */
 	private ProgressDialog progressDlg;
-
+	private String pkdoc;
+	private String itemname;
+	private String workitemid;
+	private String functioncode;
+	private String winid;
 	private Handler handler;
 
 	@Override
@@ -34,6 +41,22 @@ public class TestActivity extends BaseActivity {
 			@Override
 			public void handleMessage(Message msg) {
 				switch (msg.what) {
+				case StaticString.MSG_WORKLIST_DETAIL:
+					putGlobalVariable("TemplateVO", msg.obj);
+					Intent i = new Intent(TestActivity.this,
+							CommonFormActivity.class);
+					i.putExtra("pkdoc", pkdoc);
+					i.putExtra("functioncode", functioncode);
+					i.putExtra("winid", winid);
+					i.putExtra("eventid", "104");
+					i.putExtra("visitid", "10201");
+					i.putExtra("workitemid", workitemid);
+
+					i.putExtra("pk_org", "pk_org0001");
+					i.putExtra("itemname", itemname);
+					startActivityForResult(i, 10);
+					progressDlg.dismiss();
+					break;
 				default: // 网络失败或者不是200
 					progressDlg.dismiss();
 					showNoDataView(); // 列表被空页面代替
@@ -79,44 +102,29 @@ public class TestActivity extends BaseActivity {
 									@Override
 									public void onClick(DialogInterface dialog,
 											int which) {
+										WorkItemVO workItem;
 										if (which == 0) {
 
 											CFTemplateManager manager = new CFTemplateManager(
-													EventDetailActivity.this,
+													TestActivity.this,
 													handler,
 													StaticString.MSG_WORKLIST_DETAIL);
-											pkdoc = workItem.getPkdoc();
-											itemname = workItem.getItemname();
-											workitemid = workItem.getItemid();
-											functioncode = workItem
+											workItem = new WorkItemVO();
+											String pkdoc = workItem.getPkdoc();
+											String itemname = workItem
+													.getItemname();
+											String workitemid = workItem
+													.getItemid();
+											String functioncode = workItem
 													.getFunctioncode();
-											winid = workItem.getWinid();
+											String winid = workItem.getWinid();
 											manager.getCFTemplate(
 													workItem.getFunctioncode(),
 													workItem.getPkdoc(),
 													workItem.getWinid());
 
 										} else if (which == 1) {
-											Intent intent = new Intent();
-											intent.setClass(
-													EventDetailActivity.this,
-													CFListActivity.class);
-											intent.putExtra("workitemid",
-													workItem.getItemid());
-											intent.putExtra("visitid",
-													dayEvent_visitId);
-											intent.putExtra("functioncode",
-													workItem.getFunctioncode());
-											intent.putExtra("pkdoc",
-													workItem.getPkdoc());
-											intent.putExtra("winid",
-													workItem.getWinid());
-											intent.putExtra("workname",
-													workItem.getItemname());
-											intent.putExtra("nodename",
-													eventDetail
-															.getChannelname());
-											startActivity(intent);
+
 										} else if (which == 2) {
 
 										}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:padding="@dimen/cf_field_padding" >
+
+    <ImageView
+        android:id="@+id/requiredfields"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/cell_ic_requiredfields"
+        android:visibility="invisible" />
+
+    <wa.android.nc631.commonform.view.MaxByteLengthEditText
+        android:id="@+id/cfViewTextEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/requiredfields"
+        android:background="@null"
+        android:gravity="left"
+        android:maxLength="200"
+        android:paddingLeft="@dimen/cf_field_padding"
+        android:textColor="@color/list_text_blue"
+        android:textColorHint="@color/list_text_gray_new"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+</RelativeLayout>

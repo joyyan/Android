@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="@dimen/cf_field_padding" >
+
+    <ImageView
+        android:id="@+id/requiredfields"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/cell_ic_requiredfields"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/cf_view_left"
+        android:layout_width="@dimen/cf_field_prompt_size"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/list_text_black"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/cf_view_right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/detail_row_arrow" />
+
+    <!-- 自由表单pic项图片icon -->
+
+    <ImageView
+        android:id="@+id/cf_view_right_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin12"
+        android:layout_toLeftOf="@id/cf_view_right_arrow"
+        android:src="@null"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/cf_view_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/cf_view_right_arrow"
+        android:layout_toRightOf="@id/cf_view_left"
+        android:background="@null"
+        android:gravity="right"
+        android:paddingLeft="@dimen/cf_field_padding"
+        android:singleLine="true"
+        android:textColor="@color/list_text_blue"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="@dimen/cf_field_padding" >
+
+    <LinearLayout
+        android:id="@+id/cfViewNamelayout"
+        android:layout_width="@dimen/cf_field_prompt_size"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/requiredfields"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cell_ic_requiredfields"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/cfViewName"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/cf_field_text_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cf_view_text_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/cfViewNamelayout"
+        android:layout_toLeftOf="@+id/cf_view_get_button"
+        android:background="@null"
+        android:gravity="right"
+        android:paddingLeft="@dimen/cf_field_padding"
+        android:singleLine="true"
+        android:textColor="#688fdf"
+        android:textSize="14dp" />
+
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Small"
+        android:id="@+id/cf_view_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+         />
+
+    <Button
+         android:id="@+id/cf_view_get_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/commonform_action_button"
+        android:layout_alignParentRight="true"
+        android:gravity="right"/>
+
+</RelativeLayout>

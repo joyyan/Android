@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_back" >
+
+    <!-- 附件列表title -->
+
+    <include
+        android:id="@+id/attachment_titlePanel"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_title_attachmentlist" />
+
+    <!-- 附件列表view -->
+
+    <ScrollView
+        android:id="@+id/messagedetail_detailContentScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_lace"
+        android:layout_marginTop="-6dp"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical" >
+
+            <!-- 照片layout -->
+
+            <LinearLayout
+                android:id="@+id/fileUpload_listPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <!-- 录音layout -->
+
+            <LinearLayout
+                android:id="@+id/fileUpload_newRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/mailcontent"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <RelativeLayout
+                    android:id="@+id/fileUpload_recordInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/fileUpload_recordPlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/icon_play" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@id/fileUpload_recordPlay"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/fileUpload_recordSize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="13KB"
+                            android:textColor="@color/buleword"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/fileUpload_recordName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@id/fileUpload_recordSize"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="2013-11-16-22-52-25-5868.m4a"
+                            android:textColor="@color/list_text_black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <SeekBar
+                    android:id="@+id/fileUpload_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- @dimen/commonPadding -->
+    </ScrollView>
+
+    <!-- 无数据页面 -->
+
+    <LinearLayout
+        android:id="@+id/messagemain_nodataPanel"
+        android:layout_below="@+id/title_lace"
+  android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="#f0f0f0"
+            android:gravity="center"
+            android:visibility="gone"
+          >
+            <!--      android:background="@drawable/empty_view" -->
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:textColor="#8f8f8f"
+                android:textSize="12sp"
+    			android:text="@string/nodataonpanel"
+                android:gravity="center" />
+        </LinearLayout>
+
+    <!-- title下面花边 -->
+
+    <ImageView
+        android:id="@+id/title_lace"
+        android:layout_width="fill_parent"
+        android:layout_height="6dp"
+        android:layout_below="@id/attachment_titlePanel"
+        android:background="@drawable/titile_lace" />
+
+</RelativeLayout>

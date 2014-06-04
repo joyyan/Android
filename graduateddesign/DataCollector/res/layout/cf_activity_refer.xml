@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6" >
+
+    <RelativeLayout
+        android:id="@+id/layoutTitle_staff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_xhdpi"
+        android:background="@drawable/common_title_bg" >
+
+        <Button
+            android:id="@+id/tasktitlepanel_leftBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/common_button_title_back"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="1dp"
+            android:paddingRight="10dp"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tasktitlepanel_titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="人员搜索"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/staffsearch_editLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/layoutTitle_staff"
+        android:background="@drawable/search_background" >
+
+        <ImageView
+            android:id="@+id/staffsearch_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin30"
+            android:src="@drawable/search_delete" />
+
+        <EditText
+            android:id="@+id/staffsearch_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:layout_toLeftOf="@id/staffsearch_delete"
+            android:background="@null"
+            android:gravity="left"
+            android:hint=""
+            android:singleLine="true"
+            android:textSize="@dimen/textSize_medium26" />
+    </RelativeLayout>
+
+    <!-- 搜索人员列表ListView -->
+
+    <RelativeLayout
+        android:id="@+id/stafflist_dataPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/staffsearch_editLayout"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/search_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <wa.android.libs.listview.WALoadListView
+            android:id="@+id/Staff_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- 无数据页面 -->
+
+        <LinearLayout
+            android:id="@+id/stafflist_nodataPanel"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="#f0f0f0"
+            android:gravity="center"
+            android:visibility="gone"
+          >
+            <!--      android:background="@drawable/empty_view" -->
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:textColor="#8f8f8f"
+                android:textSize="12sp"
+    			android:text="@string/nodataonpanel"
+                android:gravity="center" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

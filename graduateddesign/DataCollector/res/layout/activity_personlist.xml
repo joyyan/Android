@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_back" >
+
+    <include
+        android:id="@+id/layoutTitle_staff"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_title_forpersonlist" />
+
+    <LinearLayout
+        android:id="@+id/staffsearch_panel"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@id/layoutTitle_staff"
+        android:background="@color/nav_bkgrd"
+        android:paddingBottom="6dp" >
+
+        <RelativeLayout
+            android:id="@+id/staffsearch_editLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/search_bg" >
+
+            <ImageView
+                android:id="@+id/staffsearch_mirror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/searchmirror" />
+
+            <ImageView
+                android:id="@+id/staffsearch_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/search_delete"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/staffsearch_editText"
+                style="@style/editTextCrm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/staffsearch_delete"
+                android:layout_toRightOf="@+id/staffsearch_mirror"
+                android:background="@null"
+                android:gravity="left"
+                android:imeOptions="actionSearch"
+                android:padding="0dp"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <!-- 搜索人员列表ListView -->
+
+    <RelativeLayout
+        android:id="@+id/stafflist_dataPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/listtitle_lace"
+        android:layout_marginTop="-3dp"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/search_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <wa.android.libs.listview.WALoadListView
+            android:id="@+id/Staff_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- 无数据页面 -->
+
+        <LinearLayout
+            android:id="@+id/stafflist_nodataPanel"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="#f0f0f0"
+            android:gravity="center"
+            android:visibility="gone"
+          >
+            <!--      android:background="@drawable/empty_view" -->
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:textColor="#8f8f8f"
+                android:textSize="12sp"
+    			android:text="@string/nodataonpanel"
+                android:gravity="center" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/listtitle_lace"
+        android:layout_width="fill_parent"
+        android:layout_height="6dp"
+        android:layout_below="@id/staffsearch_panel"
+        android:background="@drawable/titile_lace" />
+</RelativeLayout>
